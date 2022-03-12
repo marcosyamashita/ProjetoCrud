@@ -10,7 +10,7 @@ if(isset($_POST['btn-create'])):
     $valorproduto = mysqli_escape_string($connect, $_POST['valor-produto']);
     $pesoproduto = mysqli_escape_string($connect, $_POST['peso-produto']);
     $quantidadeEstoqueproduto= mysqli_escape_string($connect, $_POST['quantidadeEstoque-produto']);
-    $idfornecedor = mysqli_escape_string($connect, $_POST['nome-fornecedor"']);
+    $idfornecedor = mysqli_escape_string($connect, $_POST['nome-fornecedor']);
 
 
     $sql = "INSERT INTO produto (nome_produto, valor_produto, peso_produto, quantidadeEstoque_produto, id_fornecedor) 
